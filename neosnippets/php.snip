@@ -12,6 +12,16 @@ abbr function () {}
 		${3:TARGET}
 	}
 
+snippet function_setter_getter
+	${1:public} function set${2:Variable}(${3:string} $${4:variable})
+	{
+		$this->$4 = $$4;
+	}
+	$1 function get$2() : $3
+	{
+		return $this->$4;
+	}
+
 snippet php
 	<?php
 	${1:TARGET}
