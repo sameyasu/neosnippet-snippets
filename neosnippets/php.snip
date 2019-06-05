@@ -1,8 +1,8 @@
 snippet function
-abbr public function () {}
-	${1:public }function ${2:#:FunctionName}(${3})
+abbr public function () : void {}
+	${1:public }function ${2:#:FunctionName}(${3}) : ${4:void}
 	{
-		${4:TARGET}
+		${5:TARGET}
 	}
 
 snippet function_literal
@@ -13,7 +13,7 @@ abbr function () {}
 	}
 
 snippet function_setter_getter
-	${1:public} function set${2:Variable}(${3:string} $${4:variable})
+	${1:public} function set${2:Variable}(${3:string} $${4:variable}) : void
 	{
 		$this->$4 = $$4;
 	}
@@ -87,12 +87,12 @@ snippet doc_interface_function
 
 snippet doc_function
 	/**
-	 * ${4:#:undocumented function}
+	 * ${5:#:undocumented function}
 	 *
-	 * @return ${5:void}
+	 * @return $4
 	 * @author ${6}
 	 **/
-	${1}function ${2}(${3})
+	${1}function ${2}(${3}) : ${4:void}
 	{
 		${0:TARGET}
 	}
