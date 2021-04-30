@@ -25,7 +25,7 @@ snippet function_setter_getter
 snippet php
 	<?php
 	${1:TARGET}
-    /* End of file ${2:filename}.php */
+	/* End of file ${2:filename}.php */
 
 snippet pecho
 	<?php echo ${1} ?>${0}
@@ -215,6 +215,7 @@ snippet foreach-hashmap
 	}
 
 snippet foreach-list
+alias foreach
 options head
 	foreach ($${1:#:variable} as $${2:#:x}) {
 		${0:TARGET}
